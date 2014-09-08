@@ -9,8 +9,7 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class IntroJavaCourse extends ProgrammingCourse{
-
-
+    
     @Override
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
