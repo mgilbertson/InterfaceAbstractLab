@@ -19,7 +19,6 @@ public abstract class ProgrammingCourse {
     public String prerequisites;
 
     
-    
     public String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }

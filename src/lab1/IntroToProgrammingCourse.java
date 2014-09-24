@@ -26,5 +26,6 @@ public class IntroToProgrammingCourse extends ProgrammingCourse{
     public void setPrerequisites(String prerequisites) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
     
 }
