@@ -12,7 +12,7 @@ package lab2;
  */
 public class Startup {
     public static void main(String[] args) {
-        lab1.ProgrammingCourse advJava1 = new lab1.AdvancedJavaCourse();
+        ProgrammingCourse advJava1 = new AdvancedJavaCourse("Advanced Java", "3001");
         advJava1.setCourseName("Advanced Java");
         advJava1.setCourseNumber("3001");
         advJava1.setPrerequisites("Intro to Java");
@@ -21,18 +21,14 @@ public class Startup {
                 "\nCredits: " + advJava1.getCredits() + "\nPrerequisites: " + advJava1.getPrerequisites());
         
         System.out.println("");
-        lab1.ProgrammingCourse intJava1 = new lab1.IntroJavaCourse();
-        intJava1.setCourseName("Intro to Java");
-        intJava1.setCourseNumber("2001");
+        ProgrammingCourse intJava1 = new AdvancedJavaCourse("Intro to Java", "2001");
         intJava1.setPrerequisites("Intro to Programming");
-        intJava1.setCredits(5.0);
+        intJava1.setCredits(4.0);
         System.out.println("Course: " + intJava1.getCourseName() + "\nCourseNumber: " + intJava1.getCourseNumber() +
                 "\nCredits: " + intJava1.getCredits() + "\nPrerequisites: " + intJava1.getPrerequisites());
         
         System.out.println("");
-        lab1.ProgrammingCourse intProg1 = new lab1.IntroToProgrammingCourse();
-        intProg1.setCourseName("Intro to Java");
-        intProg1.setCourseNumber("2001");
+        ProgrammingCourse intProg1 = new AdvancedJavaCourse("Intro to Programming", "1001");
         intProg1.setCredits(4.0);
         System.out.println("Course: " + intProg1.getCourseName() + "\nCourseNumber: " + intProg1.getCourseNumber() +
                 "\nCredits: " + intProg1.getCredits() + "\nPrerequisites: None");
