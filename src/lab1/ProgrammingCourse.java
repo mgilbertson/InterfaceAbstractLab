@@ -16,9 +16,11 @@ public abstract class ProgrammingCourse {
     private String courseName;
     private String courseNumber;
     public double credits;
-    public String prerequisites;
 
-    
+    public ProgrammingCourse(String courseName, String courseNumber) {
+        setCourseName(courseName);
+        setCourseNumber(courseNumber);
+    }
     public String getCapitalizedCourseName() {
         return this.getCourseName().toUpperCase();
     }
@@ -34,9 +36,8 @@ public abstract class ProgrammingCourse {
     public double getCredits() {
         return credits;
     }
-
-    public String getPrerequisites() {
-        return prerequisites;
+    public void setCredits(double credits){
+        this.credits = credits;
     }
 
     public void setCourseName(String courseName) {
@@ -51,12 +52,7 @@ public abstract class ProgrammingCourse {
         }
     this.courseNumber = courseNumber;
     }
-
-    public abstract void setCredits(double credits);
-
+    
+    public abstract String getPrerequisites();
     public abstract void setPrerequisites(String prerequisites);
-    
-    
-    
-
 }
